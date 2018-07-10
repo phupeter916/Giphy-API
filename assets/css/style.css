@@ -2,10 +2,11 @@
 .buttons {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 0px;
     
 }
 
-.button-main {
+.button {
     width: 75px;
     height: 30px;
     margin-right: 10px;

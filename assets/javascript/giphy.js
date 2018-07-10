@@ -5,31 +5,22 @@ $( document ).ready(function() {
 
 
 
-    for(var i = 0; i<= topics.length; i++) {
+    for(var i = 0; i< topics.length; i++) {
         console.log([i]);
 
-        //$(".buttons").append("<button>");
-        //$(".buttons").addClass("button");
-        //$(".button").text(topics);
-        //console.log([topics]);
-    
-        //$(".buttons").text(topics);
-
         var button = $("<button>");
-
-        button.addClass("button-main");
-
+        button.addClass("button");
+        button.attr("data-name", topics[i]);
+        button.text(topics[i]);
         $(".buttons").append(button);
 
 
-
-
+        
     }
 
 
 
 
 });
-
 
 
