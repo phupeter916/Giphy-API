@@ -1,0 +1,26 @@
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.button-main {
+    width: 75px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 0px;
+
+}
+
+.image {
+    background-color: yellow;
+    width: 1000px;
+    height: 300px;
+    
+}
+
+.inputbox {
+    float: right;
+    
+}
