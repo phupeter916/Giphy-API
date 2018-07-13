@@ -1,4 +1,9 @@
 
+body {
+    background-color: lightgray;
+}
+
+
 .buttons {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -12,12 +17,10 @@
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 10px;
-
-}
-
-
-
-.inputbox {
-    float: right;
+    box-shadow: 10px;
     
+
 }
+
+
+

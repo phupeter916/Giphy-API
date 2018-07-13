@@ -15,6 +15,7 @@ $( document ).ready(function() {
     }
 
     //create on click function for the buttons
+    function getImage() {
     $(".button").on("click", function(){
 
         event.preventDefault();
@@ -32,15 +33,15 @@ $( document ).ready(function() {
                     var animalDiv = $("<div>");
                     var p = $("<p>").text("Rating: "+response.data[i].rating);
                     var animalImage = $("<img>");
-                    animalImage.attr("src", response.data[i].images.fixed_width.url);
+                    animalImage.attr("src", response.data[i].images.fixed_width_still.url);
                     animalImage.attr("data-still", response.data[i].images.fixed_width_still.url);
                     animalImage.attr("data-animate", response.data[i].images.fixed_width.url);
                     animalImage.addClass("gif")
-                    animalImage.attr("data-state", "animate");
+                    animalImage.attr("data-state", "still");
                     animalDiv.append(p);
                     animalDiv.append(animalImage);
                     $(".image").prepend(animalDiv);
- 
+            
 
             } // end of for loop
 
@@ -60,17 +61,56 @@ $( document ).ready(function() {
                    $(this).attr("data-state", "still");
                  }
                }); // end of gif click
-
+            
            
 
         }); // end of ajax/done
     
         
-    }); // end of button click    
+    }); // end of button click  
+    
+};
+
+    //On click function for submit button
+    //event.preventDefault();
+    $("#submit-btn").on("click", function() {
+        event.preventDefault();
+        var theText = $("#input-text").val().trim();
+        var button = $("<button>");
+        button.addClass("button");
+        button.attr("data-animal", topics[i]);
+        button.text(theText);
+        $(".buttons").append(button);
+
+    
+
+        //$(".button").on("click", function(){
+        //event.preventDefault();
+        
+        //var x = $(this).data("animal");
+        //console.log(x);
+        getImage();
 
 
 
 
+
+
+        
+
+            
+
+        
+
+            
+    });
+
+
+
+
+    //grap text from input and set to an variable
+    //append text to create new array button
+    
 
 
 }); // end of document ready
