@@ -1,6 +1,7 @@
 
 body {
-    background-color: lightgray;
+    background-image: url("../images/background-image.jpg");
+    
 }
 
 
@@ -12,15 +13,28 @@ body {
 }
 
 .button {
-    width: 75px;
+    width: 100px;
     height: 30px;
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 10px;
-    box-shadow: 10px;
-    
-
+    background-color: #4CAF50;
 }
 
+#submit-btn {
+    background-color: #4CAF50;
+}
 
+.inputbox {
+    height: 120px;
+}   
+
+.button:hover {
+    background-color: red;
+}
+ 
+#submit-btn:hover {
+    background-color: red;
+
+}
 
