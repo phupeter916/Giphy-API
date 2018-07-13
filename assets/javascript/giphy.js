@@ -15,7 +15,7 @@ $( document ).ready(function() {
     }
 
     //create on click function for the buttons
-    function getImage() {
+    
     $(".button").on("click", function(){
 
         event.preventDefault();
@@ -69,7 +69,7 @@ $( document ).ready(function() {
         
     }); // end of button click  
     
-};
+
 
     //On click function for submit button
     //event.preventDefault();
@@ -84,19 +84,16 @@ $( document ).ready(function() {
 
     
 
-        //$(".button").on("click", function(){
-        //event.preventDefault();
+        $(".button").on("click", function(){
+        event.preventDefault();
         
-        //var x = $(this).data("animal");
-        //console.log(x);
-        getImage();
+        alert("I am clicked!!");
 
 
 
 
 
-
-        
+        });
 
             
 
