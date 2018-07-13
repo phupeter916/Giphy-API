@@ -14,6 +14,11 @@ $( document ).ready(function() {
         $(".buttons").append(button);
     }
 
+
+    
+        
+    
+
     //create on click function for the buttons
     
     $(".button").on("click", function(){
@@ -41,7 +46,7 @@ $( document ).ready(function() {
                     animalDiv.append(p);
                     animalDiv.append(animalImage);
                     $(".image").prepend(animalDiv);
-            
+                        
 
             } // end of for loop
 
@@ -62,7 +67,7 @@ $( document ).ready(function() {
                  }
                }); // end of gif click
             
-           
+                  
 
         }); // end of ajax/done
     
@@ -87,26 +92,30 @@ $( document ).ready(function() {
         $(".button").on("click", function(){
         event.preventDefault();
         
-        alert("I am clicked!!");
+        var button = $("<button>");
+        button.addClass("button");
+        button.attr("data-animal", topics[i]);
+        var x = $(button).data("animal");
+        console.log(x);
 
 
 
 
 
-        });
+
+        });//end of new animal button onclick
 
             
 
         
 
             
-    });
+    });//end of submit onclick
 
 
 
 
-    //grap text from input and set to an variable
-    //append text to create new array button
+    
     
 
 
