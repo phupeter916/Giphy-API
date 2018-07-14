@@ -136,32 +136,8 @@ $( document ).ready(function() {
         $(".buttons").append(button);
 
         event.preventDefault();
-        //Onclick fuction to get gifs from giphy api. Called function
+        //Onclick fuction to get gifs from giphy api. Called function`
         getImage(); 
-
-
-
-
-        
-
-
-
-
-
-        
-
-            
-
-        
-
-            
     });//end of submit onclick
-
-
-
-
-    
-    
-
 
 }); // end of document ready
